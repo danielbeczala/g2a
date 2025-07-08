@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS orders (
+  id UUID PRIMARY KEY,
+  amount NUMERIC(8,2) NOT NULL,
+  currency CHAR(3) NOT NULL,
+  processed BOOLEAN NOT NULL DEFAULT FALSE
+);
